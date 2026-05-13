@@ -1,47 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenFuture</title>
-    <link rel="stylesheet" href="css/estils.css">
+    <meta charset="UTF-8"> <!-- Permite usar caracteres especiales -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la web responsive -->
+
+    <title>GreenFuture</title> <!-- Título que aparece en la pestaña -->
+
+    <link rel="stylesheet" href="css/estils.css"> <!-- Conecta el archivo CSS -->
+
 </head>
 
-<body>
-    <div class="header">
-        <img src="" alt="logo" class="logo-header">
-        <h1><a href="index.html">GREEN FUTURE</a></h1>
+<body> <!-- Inicio del contenido visible -->
 
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+    <!-- ===== HEADER ===== -->
+    <header class="header"> <!-- Cabecera principal -->
+
+        <!-- Zona del logo -->
+        <div class="logo-area">
+
+            <!-- Imagen del logo -->
+            <img src="img/logo.png" alt="Logo GreenFuture" class="logo">
+
+            <!-- Nombre de la ONG -->
+            <h1>GREEN FUTURE</h1>
+
         </div>
-        <div class="lang-switch">
-            <label for="idioma">Language</label>
-            <select name="idioma" id="language">
-                <option href="../index.html" value="ca">Català</option>
-                <option href="index.html" value="es" selected>Español</option>
-                <option href="../en/index.html" value="en">English</option>
+
+        <!-- Menú de navegación -->
+        <nav class="nav">
+
+            <!-- Enlace a inicio -->
+            <a class="inicio" href="index.html">Inicio</a>
+
+            <!-- Enlace a sobre nosotros -->
+            <a class="about" href="about.html">Sobre Nosotros</a>
+
+            <!-- Enlace a proyectos -->
+            <a class="proyects" href="projects.html">Proyectos</a>
+
+            <!-- Enlace a contacto -->
+            <a class="contact" href="contact.html">Contacto</a>
+
+        </nav>
+
+        <!-- Dropdown de idiomas -->
+        <div class="dropdown">
+
+            <!-- Botón principal -->
+            <button class="dropboton">
+                Idioma ▼
+            </button>
+
+            <!-- Contenido desplegable -->
+            <div class="dropdown-content">
+
+                <!-- Enlace catalán -->
+                <a href="../ca/index.html">Català</a>
+
+                <!-- Enlace español -->
+                <a href="index.html">Español</a>
+
+                <!-- Enlace inglés -->
+                <a href="../en/index.html">English</a>
+
+            </div>
+
+        </div>
+    </div>
+
             </select>
-        </div>
-    </div>
 
-    <div class="content">
-        <div>
-            <h2>Bienvenidos a GreenFuture</h2>
-            <p>Green Future és una ONG amb seu a Batié que promou la protecció del medi ambient, el lideratge femení i
-                l'agricultura sostenible. Arrelada a la comunitat, empoderem dones i joves perque liderin el camí cap a
-                un Camerun resilient.</p>
         </div>
-        <div>
-            <h2>Qui som?</h2>
-            <p><img src="" alt="logo" class="img-"></p>
+
+    </header>
+
+    <!-- ===== SECCION PRINCIPAL ===== -->
+    <section class="sp"> <!-- Sección principal -->
+
+        <!-- Título principal -->
+        <h2>Bienvenidos a GreenFuture</h2>
+
+        <!-- Texto descriptivo -->
+        <p>
+            GreenFuture es una ONG con sede en Batié que promueve la protección
+            del medio ambiente, el liderazgo femenino y la agricultura sostenible.
+        </p>
+
+        <!-- Botón -->
+        <a href="projects.html" class="boton">
+            Ver Proyectos
+        </a>
+
+    </section>
+
+    <!-- ===== CONTENIDO ===== -->
+    <main class="content"> 
+
+        <div class="card">
+
+            <!-- Título -->
+            <h2>¿Quiénes somos?</h2>
+
+            <!-- Texto -->
+            <p>
+                Trabajamos junto a comunidades locales para construir
+                un futuro más verde y sostenible.
+            </p>
+
         </div>
-    </div>
 
-    <div class="footer">
+        <!-- Segunda tarjeta -->
+        <div class="card">
 
-    </div>
+            <!-- Imagen -->
+            <img src="img/comunidad.jpg" alt="Comunidad GreenFuture">
+
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer"> <!-- Pie de página -->
+
+        <!-- Texto del footer -->
+        <p>© 2026 GreenFuture</p>
+
+    </footer>
+
+</body> 
+
+</html> 

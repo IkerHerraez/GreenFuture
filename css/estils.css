@@ -6,3 +6,236 @@
     align-items: center;
     justify-content: space-between;
 }
+
+/* Para eliminar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f4;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+
+/* Cabecera */
+.header {
+
+    /* Color de fondo */
+    background-color: #2e7d32;
+
+    /* Color del texto */
+    color: white;
+
+    /* Activa flexbox */
+    display: flex;
+
+    /* Espacio entre elementos */
+    justify-content: space-between;
+
+    /* Centra verticalmente */
+    align-items: center;
+
+    /* Espaciado interno */
+    padding: 15px 40px;
+
+    /* Permite bajar elementos en móvil */
+    flex-wrap: wrap;
+
+}
+
+/* ===== LOGO ===== */
+
+/* Contenedor del logo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Imagen del logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* ===== NAV ===== */
+
+/* Menú */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Links */
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Se subrayar los links */
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== LANGUAGE ===== */
+
+/* Contenedor idioma */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Select idioma */
+.lang-switch select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Sección principal */
+.sp {
+
+    /* Centra texto */
+    text-align: center;
+
+    /* Espaciado */
+    padding: 80px 20px;
+
+    /* Imagen de fondo */
+    background-color: #b3ffb7;
+
+    /* Ajusta imagen */
+    background-size: cover;
+
+    /* Centra imagen */
+    background-position: center;
+
+    /* Texto blanco */
+    color: rgb(110, 112, 0);
+}
+
+/* Título principal */
+.sp h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Texto sección principal */
+.sp p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* ===== BOTÓN ===== */
+
+/* Botón */
+.boton {
+    background-color: rgb(110, 112, 0);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Cuando estás encima del botón */   
+.boton:hover {
+    background-color: #2e7d32;
+}
+
+/* ===== CONTENT ===== */
+
+/* Contenedor principal */
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* ===== CARD ===== */
+
+/* Tarjetas */
+.card {
+    background-color: white;
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+
+    /* Sombra */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+
+/* Pie de página */
+.footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Contenedor dropdown */
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+/* Botón */
+.dropboton {
+    background-color: white;
+    color: #2e7d32;
+
+    padding: 10px 15px; /*Separación*/
+
+    border-radius: 5px;
+
+    font-weight: bold; /*Fuente del dropdown*/
+}
+
+/* Menú oculto */
+.dropdown-content {
+    display: none; /*Para ocultarlo si no pasas el cursor por encima*/
+
+    position: absolute; /*Para que no se desplaze al pasar el cursor por encima*/
+
+    background-color: white;
+
+    border-radius: 5px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
+}
+
+/* Para elegir los idiomas */
+.dropdown-content a {
+    color: #333;
+
+    padding: 12px 15px;
+
+    text-decoration: none;
+
+    display: block;
+}
+
+
+/* Mostrar dropdown al pasar el ratón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
